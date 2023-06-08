@@ -1,0 +1,187 @@
+@font-face {
+    font-family: "Hanken Grotesk";
+    src: url('/assets/fonts/HankenGrotesk-VariableFont_wght.ttf');
+}
+
+* {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+body {
+    max-width: 1440px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(221, 100%, 96%);
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, .24) 0px 3px 8px;
+    border-radius: 2rem;
+    width: 650px;
+    background-color: white;
+}
+
+main .result {
+    padding: 1rem 2rem;
+    width: 50%;
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+main .result .title {
+    color: hsl(241, 100%, 89%);
+    margin-bottom: 1rem;
+}
+
+main .result .circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main .circle h1 {
+    color: white;
+    font-size: 4rem;
+}
+
+main .result b {
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+main .result .info {
+    width: 200px;
+}
+
+main .result p {
+    font-size: 18px;
+    color: hsl(241, 100%, 89%);
+}
+
+main .summary {
+    padding: 1rem 2rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+main .summary .title {
+    font-weight: 800;
+}
+
+main .summary .itens {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    
+}
+
+main .summary .item {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+main .summary .itens .item:nth-child(1) {
+    background-color: hsl(0, 100%, 67%, .2);
+}
+    
+main .summary .itens .item:nth-child(1) .item-icon b {
+    color: hsl(0, 100%, 67%);
+}
+    
+main .summary .itens .item:nth-child(2) {
+    background-color: hsl(39, 100%, 56%, .2);
+}
+    
+main .summary .itens .item:nth-child(2) .item-icon b {
+    color: hsl(39, 100%, 56%);
+}
+    
+main .summary .itens .item:nth-child(3) {
+    background-color: hsl(166, 100%, 37%, .2);
+}
+    
+main .summary .itens .item:nth-child(3) .item-icon b {
+    color: hsl(166, 100%, 37%);
+}
+    
+main .summary .itens .item:nth-child(4) {
+    background-color: hsl(234, 85%, 45%, .2);
+}
+    
+main .summary .itens .item:nth-child(4) .item-icon b {
+    color: hsl(234, 85%, 45%);
+}
+
+main .summary .itens .item .iten-icon {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+main .summary .itens p {
+    color: gray;
+    font-size: 18px;
+}
+
+main .summary .itens p b{
+    color: hsl(224, 30%, 27%);
+}
+
+main #btn-continue {
+    border: none;
+    background-color: hsl(224, 30%, 27%);
+    border-radius: 2rem;
+    color: white;
+    font-size: 18px;
+    padding: 1rem;
+}
+
+main #btn-continue:hover {
+    cursor: pointer;
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+@media screen and (max-width:650px) {
+    body {
+        align-items: flex-start;
+        border-color: white;
+    }
+
+    .card{
+        box-shadow: none;
+        flex-direction: column;
+    }
+
+    main .result {
+        border-radius: 0 0 1rem 1rem;
+        width: 100%;
+    }
+
+    main .result .info{
+        width: 250px;
+    }
+
+    main .summary {
+        width: 100%;
+    }
+}
