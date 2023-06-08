@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Repository](https://your-solution-url.com)
-- Live Site URL: [Project Link](https://your-live-site-url.com)
+- Solution URL: [Repository](https://github.com/LeonardoS1lva/Challenge-hub-results-summary-component)
+- Live Site URL: [Project Link](https://leonardos1lva.github.io/Challenge-hub-results-summary-component/)
 
 ## My process
 
